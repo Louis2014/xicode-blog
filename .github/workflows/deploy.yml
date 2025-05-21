@@ -32,7 +32,6 @@ concurrency:
 jobs:
   # 构建任务
   build:
-
     runs-on: ubuntu-latest
 
     # node v20 运行
@@ -75,16 +74,18 @@ jobs:
           echo ${{ github.workspace }}
           pnpm build
 
-        # 资源拷贝
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./docs/.vitepress/dist
-          destination: ./_site
+      #     # 资源拷贝
+      #   - name: Build with Jekyll
+      #     uses: actions/jekyll-build-pages@v1
+      #     with:
+      #       source: ./docs/.vitepress/dist
+      #       destination: ./_site
 
-        # 上传 _site 的资源，用于后续部署
+      # 上传 _site 的资源，用于后续部署
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
   # 部署任务
   deploy:
