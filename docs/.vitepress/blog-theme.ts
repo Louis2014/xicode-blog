@@ -52,15 +52,9 @@ const blogTheme = getThemeConfig({
   friend: [
     {
       nickname: '羲码AI',
-      des: '你的指尖用于改变世界的力量',
-      avatar: 'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top',
-    },
-    {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
-      avatar: 'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
+      des: '羲码AI,创造新世界',
+      avatar: '/xicode-blog/logo.png',
+      url: 'https://xicode-ai.github.io/xicode-blog',
     },
   ],
 
@@ -71,7 +65,7 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇公众号👇---👇 微信 👇' },
       {
         type: 'image',
-        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp',
+        src: '',
       },
       {
         type: 'text',
@@ -85,7 +79,7 @@ const blogTheme = getThemeConfig({
       {
         type: 'button',
         content: '作者博客',
-        link: 'https://sugarat.top',
+        link: 'https://xicode-ai.github.io/xicode-blog',
       },
       {
         type: 'button',
@@ -93,7 +87,7 @@ const blogTheme = getThemeConfig({
         props: {
           type: 'success',
         },
-        link: 'https://theme.sugarat.top/group.html',
+        link: '',
       },
     ],
     duration: 0,
